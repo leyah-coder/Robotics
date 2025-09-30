@@ -24,7 +24,7 @@ if answer == "A" or answer == "a":
     cat_points -= 0.5
 elif answer == "B" or answer == "b":
     cat_points += 1
-    dog_points += 0.5
+    dog_points -= 0.5
 elif answer == "C" or answer == "c":
     cat_points += 0.5
     dog_points += 0.5
@@ -37,7 +37,7 @@ if answer == "A" or answer == "B" or answer == "C" or answer == "D" or answer ==
     cat_points -= 0.5
 elif answer == "F" or answer == "G" or answer == "H" or answer == "I" or answer == "J":
     cat_points += 1
-    dog_points += 0.5
+    dog_points -= 0.5
 elif answer == "K" or answer == "L" or answer == "M" or answer == "N" or answer == "O":
     cat_points += 0.5
     dog_points += 0.5
@@ -50,7 +50,7 @@ if answer == "A" or answer == "a":
     cat_points -= 0.5
 elif answer == "B" or answer == "b":
     cat_points += 1
-    dog_points += 0.5
+    dog_points -= 0.5
 elif answer == "C" or answer == "c":
     cat_points += 0.5
     dog_points += 0.5
@@ -62,7 +62,7 @@ if answer == "A" or answer == "a":
     cat_points -= 0.5
 elif answer == "B" or answer == "b":
     cat_points += 1
-    dog_points += 0.5
+    dog_points -= 0.5
 elif answer == "C" or answer == "c":
     both_points += 1
 
@@ -77,10 +77,10 @@ elif answer == "C" or answer == "c":
 
 input("You like...")
 # end of quiz:
-if dog_points > cat_points and both_points:
+if dog_points > cat_points and dog_points > both_points:
     print("DOGS MORE")
     print("WOOF!!!!")
-elif cat_points > dog_points and both_points:
+elif cat_points > dog_points and cat_points > both_points:
     print("CATS MORE")
     print("MEOW!!!")
 elif both_points > dog_points and cat_points:
